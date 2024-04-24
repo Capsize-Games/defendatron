@@ -1,4 +1,7 @@
-# When Protecbots assemble, they create DEFENDRON
+# Defendron
+
+Defendron is a simple coordinator for `Protectbots`, Python modules that provide security features for your applications.
+
 
 ---
 
@@ -33,6 +36,8 @@ defendron.nullscream.deactivate()
 defendron.shadowlogger.deactivate()
 defendron.lockdown.deactivate()
 ```
+
+See `src/defendron/__init__.py` for more advanced usage.
 
 ## When Protecbots assemble, they create DEFENDRON
 ![img_2.png](img_1.png)
