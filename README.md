@@ -2,10 +2,11 @@
 
 Defendatron is a simple coordinator for `Protectbots`, Python modules that provide security features for your applications.
 
-
 ---
 
 ![img_1.png](img.png)
+
+[![Upload Python Package](https://github.com/Capsize-Games/defendatron/actions/workflows/python-publish.yml/badge.svg)](https://github.com/Capsize-Games/defendatron/actions/workflows/python-publish.yml)
 
 ---
 
