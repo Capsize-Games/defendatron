@@ -18,7 +18,7 @@ setup(
     ],
     dependency_links=[
         "nullscream==0.1.0",
-        "lockdown==0.1.0",
+        "darklock==0.1.0",
         "shadowlogger==0.1.0",
     ],
 )

@@ -1,5 +1,5 @@
 import shadowlogger
-import lockdown
+import darklock
 import nullscream
 
 
@@ -8,14 +8,14 @@ def activate(
     nullscream_blacklist: list = None,
     nullscream_whitelist: list = None,
 
-    # Lockdown properites
-    lockdown_os_whitelisted_operations: list = None,
-    lockdown_os_whitelisted_filenames: list = None,
-    lockdown_os_whitelisted_imports: list = None,
-    lockdown_os_blacklisted_filenames: list = None,
+    # darklock properites
+    darklock_os_whitelisted_operations: list = None,
+    darklock_os_whitelisted_filenames: list = None,
+    darklock_os_whitelisted_imports: list = None,
+    darklock_os_blacklisted_filenames: list = None,
 
     activate_shadowlogger: bool = False,
-    activate_lockdown: bool = False,
+    activate_darklock: bool = False,
     activate_nullscream: bool = False,
 ):
     print("Activating defendatron")
@@ -23,13 +23,13 @@ def activate(
         print("Activating shadow logger")
         shadowlogger.manager.activate()
 
-    if activate_lockdown:
-        print("Activating lockdown")
-        lockdown.activate(
-            whitelisted_operations=lockdown_os_whitelisted_operations,
-            whitelisted_filenames=lockdown_os_whitelisted_filenames,
-            whitelisted_imports=lockdown_os_whitelisted_imports,
-            blacklisted_filenames=lockdown_os_blacklisted_filenames,
+    if activate_darklock:
+        print("Activating darklock")
+        darklock.activate(
+            whitelisted_operations=darklock_os_whitelisted_operations,
+            whitelisted_filenames=darklock_os_whitelisted_filenames,
+            whitelisted_imports=darklock_os_whitelisted_imports,
+            blacklisted_filenames=darklock_os_blacklisted_filenames,
         )
 
     if activate_nullscream:
@@ -45,7 +45,7 @@ def deactivate(
     nullscream_blacklist: list = None,
 ):
     shadowlogger.manager.deactivate()
-    lockdown.manager.deactivate()
+    darklock.manager.deactivate()
     nullscream.manager.deactivate(
         blacklist=nullscream_blacklist,
     )
