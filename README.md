@@ -1,6 +1,6 @@
-# Defendron
+# Defendatron
 
-Defendron is a simple coordinator for `Protectbots`, Python modules that provide security features for your applications.
+Defendatron is a simple coordinator for `Protectbots`, Python modules that provide security features for your applications.
 
 
 ---
@@ -12,39 +12,39 @@ Defendron is a simple coordinator for `Protectbots`, Python modules that provide
 ## Installation
 
 ```bash
-pip install defendron
+pip install defendatron
 ```
 
 ## Usage
 
 ```python
-import defendron
+import defendatron
 
-# Activate defendron (all protectbots)
-defendron.activate()
+# Activate defendatron (all protectbots)
+defendatron.activate()
 
-# Deactivate defendron (all protectbots)
-defendron.deactivate()
+# Deactivate defendatron (all protectbots)
+defendatron.deactivate()
 
 # Activate specific protectbots
-defendron.nullscream.activate()
-defendron.shadowlogger.activate()
-defendron.lockdown.activate()
+defendatron.nullscream.activate()
+defendatron.shadowlogger.activate()
+defendatron.lockdown.activate()
 
 # Deactivate specific protectbots
-defendron.nullscream.deactivate()
-defendron.shadowlogger.deactivate()
-defendron.lockdown.deactivate()
+defendatron.nullscream.deactivate()
+defendatron.shadowlogger.deactivate()
+defendatron.lockdown.deactivate()
 ```
 
-See `src/defendron/__init__.py` for more advanced usage.
+See `src/defendatron/__init__.py` for more advanced usage.
 
-## When Protecbots assemble, they create DEFENDRON
+## When Protecbots assemble, they create DEFENDATRON
 ![img_2.png](img_1.png)
 
 ---
 
-Defendron is built with `Protectbots`, Python modules that provide security features for your applications. 
+Defendatron is built with `Protectbots`, Python modules that provide security features for your applications. 
 Each `Protectbot` is designed to defend against specific threats and vulnerabilities, 
 helping to provide another layer of protection for your code. 
 

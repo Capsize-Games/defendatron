@@ -18,7 +18,7 @@ def activate(
     activate_lockdown: bool = False,
     activate_nullscream: bool = False,
 ):
-    print("Activating defendron")
+    print("Activating defendatron")
     if activate_shadowlogger:
         print("Activating shadow logger")
         shadowlogger.manager.activate()
