@@ -15,7 +15,7 @@ setup(
     packages=find_packages("src"),
     python_requires=">=3.10.0",
     install_requires=[
-        "nullscream==0.1.2",
+        "nullscream==0.1.3",
         "darklock==0.1.2",
         "shadowlogger==0.1.1",
     ],
