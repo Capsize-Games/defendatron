@@ -17,11 +17,14 @@ def activate(
     activate_shadowlogger: bool = False,
     activate_darklock: bool = False,
     activate_nullscream: bool = False,
+
+    # Shadowlogger properties
+    show_stdout: bool = True
 ):
     print("Activating defendatron")
     if activate_shadowlogger:
-        print("Activating shadow logger")
-        shadowlogger.manager.activate()
+        print("Activating shadowlogger")
+        shadowlogger.manager.activate(show_stdout=show_stdout)
 
     if activate_darklock:
         print("Activating darklock")
