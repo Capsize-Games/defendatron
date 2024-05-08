@@ -1,9 +1,15 @@
+import logging
+
 import shadowlogger
 import darklock
 import nullscream
 from defendatron.nullscream_tracker import NullscreamTracker
 
+
 nullscream_tracker = NullscreamTracker()
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
 
 def activate(
     # Nullscream properties
@@ -24,16 +30,16 @@ def activate(
     # Shadowlogger properties
     show_stdout: bool = True
 ):
-    print("Activating defendatron")
+    logger.info("Activating defendatron")
     if activate_shadowlogger:
-        print("Activating shadowlogger")
+        logger.info("Activating shadowlogger")
         shadowlogger.manager.activate(
             show_stdout=show_stdout,
             trackers=[nullscream_tracker],
         )
 
     if activate_darklock:
-        print("Activating darklock")
+        logger.info("Activating darklock")
         darklock.activate(
             whitelisted_operations=darklock_os_whitelisted_operations,
             whitelisted_filenames=darklock_os_whitelisted_filenames,
@@ -42,7 +48,7 @@ def activate(
         )
 
     if activate_nullscream:
-        print("Activating nullscream")
+        logger.info("Activating nullscream")
         nullscream.activate(
             blacklist=nullscream_blacklist,
             whitelist=nullscream_whitelist,
