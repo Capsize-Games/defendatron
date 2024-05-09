@@ -22,6 +22,7 @@ def activate(
     darklock_os_whitelisted_filenames: list = None,
     darklock_os_whitelisted_imports: list = None,
     darklock_os_blacklisted_filenames: list = None,
+    darklock_os_whitelisted_directories: list = None,
 
     activate_shadowlogger: bool = False,
     activate_darklock: bool = False,
@@ -45,6 +46,7 @@ def activate(
             whitelisted_filenames=darklock_os_whitelisted_filenames,
             whitelisted_imports=darklock_os_whitelisted_imports,
             blacklisted_filenames=darklock_os_blacklisted_filenames,
+            whitelisted_directories=darklock_os_whitelisted_directories,
         )
 
     if activate_nullscream:
