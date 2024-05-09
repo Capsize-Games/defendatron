@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="defendatron",
-    version="0.1.7",
+    version="0.1.8",
     author="Capsize LLC",
     description="",
     long_description=open("README.md", "r", encoding="utf-8").read(),
@@ -16,7 +16,7 @@ setup(
     python_requires=">=3.10.0",
     install_requires=[
         "nullscream==0.1.3",
-        "darklock==0.1.4",
+        "darklock==0.1.5",
         "shadowlogger==0.1.1",
     ],
     dependency_links=[
